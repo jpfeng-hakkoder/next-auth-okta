@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import NextAuthProvider from '@/app/providers/NextAuthProvider';
-import LoginButton from "@components/auth/LoginButton";
+import TheTopNavBar from "@components/TheTopNavBar/TheTopNavBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,9 +21,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <NextAuthProvider>
           {/* Topnav */}
-          <nav className="flex h-16 p-2 bg-teal-400 items-center">
-            <LoginButton></LoginButton>
-          </nav>
+          <TheTopNavBar/>
           {children}
         </NextAuthProvider>
       </body>
