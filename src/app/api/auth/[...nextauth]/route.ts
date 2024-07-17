@@ -1,7 +1,7 @@
 import NextAuth from 'next-auth'
-import { config } from '@/app/lib/auth'
+import { authOptions } from '@/app/lib/auth'
 
-const handler = NextAuth(config)
+const handler = NextAuth(authOptions)
 
 export {
     handler as GET,

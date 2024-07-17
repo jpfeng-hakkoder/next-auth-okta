@@ -6,9 +6,9 @@ export default function Home() {
   return (
     <main> 
       <div>
-      ClientComponent {status}{' '}
-      {status === 'authenticated' && session.user?.name}
-    </div>
+        ClientComponent {status}{' '}
+        {status === 'authenticated' && session.user?.name}
+      </div>
     </main>
   );
 }
